@@ -196,8 +196,6 @@ $().ready(function() {
                 $(id1_).text("-");
                 $(id2_).text("-");
                 $(this).text("-");
-            } else {
-
             }
         }
         redraw();
