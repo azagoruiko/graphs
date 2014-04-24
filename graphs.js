@@ -69,11 +69,6 @@ function calcDegrees() {
     var hasOdd = false;
     $.each(obj.vertices, function (index, value) {
         var n = findNeighbours(value);
-        /*$('#log').append("Neighbours of: " + value.name + " are: ");
-        $.each(n, function (i,v){
-            $('#log').append(v.name + ", ");
-        });
-        $('#log').append("<br />");*/
         value.degree = Object.keys(n).length;
         value.even = !(value.degree & 1 !== 0);
         if (!value.even) hasOdd = true;
